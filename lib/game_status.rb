@@ -26,6 +26,9 @@ end
       return false
     end
   end
-
+  board.each do |any| 
+    if any.all? == "X" && "O"
+    end
+  end
 end
 end
