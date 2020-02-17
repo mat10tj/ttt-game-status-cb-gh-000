@@ -21,16 +21,15 @@ board.each do |string|
   if string == "" || string == " "
   return false
 end
-end
   board.each do |tie|
     if tie =="" || tie == " "
       return false
     end
   end
-  board.each do |any|
+  board.each.all? do |any|
     if any == "X" && "O"
       return false
     end
   end
-
+end
 end
