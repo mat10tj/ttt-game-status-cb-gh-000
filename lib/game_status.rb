@@ -27,7 +27,7 @@ end
     end
   end
   board.each do |any|
-    if any.all? == "X" && "O"
+    if any == "X" && "O"
       return false
     end
   end
