@@ -21,6 +21,7 @@ board.each do |string|
   if string == "" || string == " "
   return false
 end
+end
   board.each do |tie|
     if tie =="" || tie == " "
       return false
@@ -31,5 +32,5 @@ end
       return false
     end
   end
-end
+
 end
