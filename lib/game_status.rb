@@ -17,6 +17,12 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
+  top_row = WIN_COMBINATIONS[0]
+  middle_row = WIN_COMBINATIONS[1]
+  bottom_row = WIN_COMBINATIONS[2]
+  leftCol= WIN_COMBINATIONS[3]
+  board.each do |rowWin|
+
 board.each do |string|
   if string == "" || string == " "
   return false
