@@ -25,8 +25,11 @@ def won?(board)
   rightCol = WIN_COMBINATIONS[5]
   leftDiag = WIN_COMBINATIONS[6]
   rightDiag = WIN_COMBINATIONS[7]
-  board.each do |rowWin|
-end
+  board.each.any? do |rowWin|
+    if rowWin == WIN_COMBINATIONS
+      return
+    end
+  end
 board.each.all? do |string|
   if string == "" || string == " "
   return false
