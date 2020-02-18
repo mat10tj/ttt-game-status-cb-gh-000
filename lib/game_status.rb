@@ -26,7 +26,7 @@ def won?(board)
   leftDiag = WIN_COMBINATIONS[6]
   rightDiag = WIN_COMBINATIONS[7]
   board.each.any? do |rowWin|
-    if rowWin == WIN_COMBINATIONS
+    if rowWin == WIN_COMBINATIONS[].any?
       return
     end
   end
