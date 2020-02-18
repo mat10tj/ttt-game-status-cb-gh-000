@@ -21,7 +21,10 @@ def won?(board)
   middle_row = WIN_COMBINATIONS[1]
   bottom_row = WIN_COMBINATIONS[2]
   leftCol = WIN_COMBINATIONS[3]
-  midCol = WIN_COMBINATIONS[]
+  midCol = WIN_COMBINATIONS[4]
+  rightCol = WIN_COMBINATIONS[5]
+  leftDiag = WIN_COMBINATIONS[6]
+  rightDiag = WIN_COMBINATIONS[7]
   board.each do |rowWin|
 
 board.each do |string|
