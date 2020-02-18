@@ -27,7 +27,7 @@ def won?(board)
   rightDiag = WIN_COMBINATIONS[7]
   board.each do |rowWin|
 end
-board.each do |string|
+board.each.all? do |string|
   if string == "" || string == " "
   return false
 end
